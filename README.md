@@ -37,6 +37,7 @@ A Service to handle delivery order management and tracking.
 - Make sure the mysql service is running on port 3306 on your local machine and credentials are valid
 
 ## Concurrency, Multithreaded Environment and Optimizations
+- The application includes a scheduler to simulate real-world scenarios by transitioning orders from "pending" to "in progress" and finally to "delivered."
 - The application uses Executor service to handle multiple thread to update status of the order.
 - The application implements pagination to handle listing of orders in all orders.
 - The application uses custom exception handling to handle exceptions and return appropriate response.
